@@ -1,0 +1,22 @@
+/* Presentation components */
+.presentation-div-container{
+    max-width: 60em;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Auth components */
+.auth-button-div-container{
+    max-width: 60em;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+}
+.auth-button {
+    width: 16em;
+    height: 4em;
+}
