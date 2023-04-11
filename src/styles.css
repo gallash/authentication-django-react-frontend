@@ -1,3 +1,16 @@
+/* General settings */
+@import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+:root{
+    --neon-color: #08f;
+    --border-radius: .5em;
+}
+
+/* Body */
+body{
+    background-color: #343541;
+    color: white;
+}
+
 /* Presentation components */
 .presentation-div-container{
     max-width: 60em;
@@ -14,9 +27,30 @@
     margin: auto;
 
     display: flex;
-    justify-content: center;
 }
 .auth-button {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+
+    border-style: none;
+    border-radius: var(--border-radius);
+    
+    margin: auto;
+
     width: 16em;
     height: 4em;
+}
+.auth-button:hover{
+    border-color: var(--neon-color);
+    color: var(--neon-color);
+    
+    /* It is possible to concatenate multiple shadows by separating 
+    them by commas */
+    text-shadow:
+        0 0 2rem var(--neon-color),
+        0 0 3rem #fff;
+    box-shadow:
+        0 0 1rem var(--neon-color),
+        0 0 2rem var(--neon-color);
 }
